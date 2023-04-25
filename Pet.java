@@ -36,12 +36,13 @@ public class Pet {
             System.out.println("Enter the dog count you need to purchase");
             Scanner countinput = new Scanner(System.in);
             int dogcount = countinput.nextInt();
-            System.out.println("Purchase amount: $" + dog.amountofpurchase(dogcount, 1500));
+            System.out.println("Purchase amount: $" + dog.amountofpurchase(dogcount,dog.dogprice));
             break;
 
         case "Cat":
             Cat cat = new Cat("Cat",5,"Bengal Cat", 302, 2, 'F', "White");
             System.out.println("Cat details: " + cat.species +"," +cat.count +"," +cat.breed + "," + cat.petid + "," + cat.age + "," + cat.gender + "," + cat.getColor());
+            Cat.vaccination();
             cat.habitat();
             cat.characteristic();
             cat.sound();
@@ -52,7 +53,7 @@ public class Pet {
             System.out.println("Enter the cat count you need to purchase");
             Scanner catcountinput = new Scanner(System.in);
             int catcount = catcountinput.nextInt();
-            System.out.println("Purchase amount: $" + cat.amountofpurchase(catcount, 1350));
+            System.out.println("Purchase amount: $" + cat.amountofpurchase(catcount,980.55));
             break;
                 case "Birds":
                     Birds bird= new Birds("Parakeet",114,1,'F',"yellow",18.50);
