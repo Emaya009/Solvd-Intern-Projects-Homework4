@@ -56,6 +56,11 @@ public class Cat extends Animal implements Classification,Supplies,Calculation {
     public void setColor(String color) {
         this.color = color;
     }
+    
+    public static void vaccination()
+    {
+        System.out.println("Cats are vaccinated");
+    }
 
     public void characteristic() {
 
