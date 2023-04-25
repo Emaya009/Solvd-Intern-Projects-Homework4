@@ -73,7 +73,7 @@ public class Pet {
                 case "Fish":
                     Fish fish =new Fish("Golden Fish","Golden Yellow");
                     System.out.println("Fish details: " +fish.breed +"," +fish.getColor());
-                    fish.swim();
+                    Aquaticbehaviour.swim();
                     fish.sustainability();
                     System.out.println("Enter the fish count you need to purchase");
                     Scanner fishcountinput = new Scanner(System.in);
